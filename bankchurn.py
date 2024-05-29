@@ -20,4 +20,4 @@ if st.button('Predict Churn'):
     churn_prob = bank_churn_model.predict_proba(features)[0][1]
     st.write(f'Predicted Churn: {"Yes" if churn_prediction[0] else "No"}')
     st.write(f'Churn Probability: {churn_prob:.2f}')
-streamlit run bankchurn.py
+
